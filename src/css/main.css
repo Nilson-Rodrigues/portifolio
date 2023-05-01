@@ -1,0 +1,57 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    padding: 100px 0;
+    background: rgb(6, 19, 35);
+    background: linear-gradient(120deg, #061323 0%, #082543 35%, #064662 100%);
+    width: 100%;
+}
+.row{
+    background-color: #030303;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo {
+    position: relative;
+    font-size: 3.2rem;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.titulo::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #071F37;
+    animation: animate 5s linear infinite;
+}
+.descricao{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+.perfil{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+}

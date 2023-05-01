@@ -8,10 +8,11 @@ main {
     background: rgb(6, 19, 35);
     background: linear-gradient(120deg, #061323 0%, #082543 35%, #064662 100%);
     width: 100%;
+    min-height: 768px;
 }
-.row{
-    background-color: #030303;
+.home-content{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .titulo {
@@ -49,6 +50,12 @@ main {
     90% {
         width: 100%;
     }
+}
+.home-descricao{
+    max-width: 50%;
+}
+.home-perfil{
+    max-width: 50%;
 }
 .perfil{
     width: 100%;
